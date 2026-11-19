@@ -1,0 +1,21 @@
+title: Open-World Minimap
+description: Documentation for Open-World Minimap, a Unity minimap, world map and GPS navigation system.
+remote_theme: just-the-docs/just-the-docs@v0.10.0
+plugins:
+  - jekyll-remote-theme
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+footer_content: "Open-World Minimap documentation. Questions or bugs? Open an issue on this repository."
+callouts:
+  tip:
+    title: Tip
+    color: green
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Important
+    color: yellow
