@@ -26,7 +26,7 @@ This repository holds the documentation only. The package itself is sold on the 
 3. **Tools → Mini Map → Scan Scene Into Map Texture**
 4. Press Play.
 
-▶️ [Watch the setup tutorial](docs/assets/video/setup_tutorial.mp4) (73 s, every click shown, starting from an empty forest scene).
+▶️ [Watch the setup tutorial](docs/assets/video/setup_tutorial.mp4) (75 s, every click shown, starting from an empty forest scene).
 
 ## Contents
 

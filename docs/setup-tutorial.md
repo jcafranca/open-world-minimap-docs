@@ -10,7 +10,7 @@ This walkthrough starts with a level that has a player but no minimap: a forest 
 
 <video src="assets/video/setup_tutorial.mp4" poster="assets/images/setup_01.jpg" controls muted playsinline width="100%"></video>
 
-[Download the video (MP4, 73 s)](assets/video/setup_tutorial.mp4)
+[Download the video (MP4, 75 s)](assets/video/setup_tutorial.mp4)
 
 1. TOC
 {:toc}
@@ -36,7 +36,7 @@ This creates **MiniMap Canvas → Safe Area → MiniMap** and an **EventSystem**
 {: .note }
 The canvas is huge in the Scene view because it's a Screen Space Overlay canvas. That's normal: the minimap appears in the top-left corner of the Game view.
 
-## 3. Set World Bounds and Camera Layers
+## 3. Set World Bounds, Camera Layers and Scan Style
 
 **World Bounds** is the X/Z rectangle your level covers: **X/Y** is its south-west corner, **W/H** its size. Here, the 100 m terrain runs from −50 to 50, so it's X −50, Y −50, W 100, H 100.
 
@@ -46,13 +46,17 @@ The canvas is huge in the Scene view because it's a Screen Space Overlay canvas.
 
 ![Camera Layers: untick the player's layer](assets/images/setup_05.jpg)
 
+**Scan Style** picks the look of the map: **Photo** (the scene as it renders) or **Painted** (a stylized map with flat colours, soft outlines and shadows). This tutorial uses Painted. See [Map sources](map-sources.md#scan-style-photo-or-painted).
+
+![Scan Style set to Painted](assets/images/setup_scanstyle.jpg)
+
 ## 4. Scan your scene
 
 Choose **Tools → Mini Map → Scan Scene Into Map Texture** in the menu bar.
 
 ![Tools, Mini Map, Scan Scene Into Map Texture](assets/images/setup_06.jpg)
 
-A top-down image of everything inside World Bounds is saved as `MiniMapScans/World.png` next to your scene and assigned to the minimap. Trees, rocks and terrain all show up, at full detail.
+A top-down map of everything inside World Bounds is saved as `MiniMapScans/World.png` next to your scene and assigned to the minimap. With Painted, every tree and rock becomes a flat painted shape with a soft outline.
 
 ![The scan next to a top-down Scene view](assets/images/setup_07.jpg)
 
