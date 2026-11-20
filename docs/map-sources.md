@@ -28,6 +28,22 @@ Select the MiniMap and choose **Tools → Mini Map → Scan Scene Into Map Textu
 - For a large world with a detailed play area (an island, a town), scan the world for the world map and add a [MiniMapArea](interiors.md) over the play area for a sharper map there.
 - **Scan again after you change the level.**
 
+### Scan style: Photo or Painted
+
+**Scan Style** on the MiniMap (Map section) chooses the look of every scan, for the world and for areas.
+
+| Photo | Painted |
+|---|---|
+| ![Photo scan](assets/images/scan_photo.jpg) | ![Painted scan](assets/images/scan_painted.jpg) |
+
+- **Photo** (default): the scene as it renders, from above.
+- **Painted**: a stylized map. Each object is filled with one flat colour taken from its own colours, with a soft darker outline and a small shadow. The ground is smoothed into flat paint, and water (the Water layer, or objects named water, lake, river, sea…) is lighter near the shore.
+- Adjust **Painted Outline**, **Painted Shallow Water** and **Painted Deep Water**, then scan again.
+- Grass, flowers, branches and other small ground cover blend into the ground. Terrain trees aren't outlined (they show as soft colour); trees placed as GameObjects are.
+- If a render setup changes the scan's colours too much to tell objects apart, a Photo scan is saved instead, with a warning in the Console.
+
+![A house floor, painted](assets/images/scan_painted_floor.jpg)
+
 ### Scanning an area or floor
 
 Select a **MiniMapArea** instead of the MiniMap and run the same menu: it scans just that box, from its top down, so the roof is left out. See [Interiors & floors](interiors.md).
