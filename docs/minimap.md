@@ -29,6 +29,8 @@ N/E/S/W letters ride just inside the edge and move as the map turns, with N in g
 
 **Margin** (distance from the top-left corner), **Icon Size** and **Edge Softness**, all in reference pixels on the 1920×1080 canvas.
 
+**Marker Scale** (default 1.4) makes marker icons (quests, NPCs, pins) bigger than **Icon Size**, while the player arrow and compass stay at Icon Size. On the world map, markers are bigger again by **World Map Icon Scale**.
+
 ## Zoom
 
 **Zoom** is the number of world units from the centre to the top edge, smoothed and clamped to **Min/Max Zoom**. Call `ZoomBy(0.8f)` to zoom in from code (below 1 zooms in).
